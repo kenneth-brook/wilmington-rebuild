@@ -14,6 +14,7 @@
 </head>
 
 <body class="page-home">
+
     <div class="root">
         <header class="header clearfix">
             <div class="header-wrapper fixed">
@@ -111,7 +112,7 @@
             <div class="footer-wrapper"></div>
         </footer>
     </div>
-
+    <script src="js/xml/xmlCall.js"></script>
 </body>
 
 </html>

@@ -14,7 +14,7 @@
 </head>
 
 <body class="page-home">
-
+    <?php ?>
     <div class="root">
         <header class="header clearfix">
             <div class="header-wrapper fixed">

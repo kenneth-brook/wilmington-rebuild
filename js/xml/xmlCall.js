@@ -1,8 +1,13 @@
+const xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "js/xml/xmlcompress.xml", true);
+xhttp.send();
 
-
-
-fetch('https://cs.simpleviewinc.com/feeds/listings.cfm?pagestart=1&apikey=ECB2A7C5-5056-A36A-1C4477A6EED8BB7B')
-    // Handle success
-    .then(response => response.json())  // convert to json
-    .then(json => console.log(json))    //print data to console
-    .catch(err => console.log('Request Failed', err)); // Catch errors
+function myFunction(xml) {
+    const xmlDoc = xml.responseXML;
+    console.log(xmlDoc)
+}
